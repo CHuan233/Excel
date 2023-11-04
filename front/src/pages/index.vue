@@ -55,9 +55,8 @@
         class="border border-white w-80 h-40 bottom-40 left-8 absolute p-4"
         v-if="isShow"
       >
-      {{ ttext }}
         <textarea
-          v-model="scrollingText"
+          v-model="ttext"
           class="w-full p-2 custom-input custom-textarea1"
         ></textarea>
         <button @click=mysend() class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md">开始发送</button>
@@ -543,13 +542,14 @@ const finishCode = () => {
   position: absolute; /* 设置位置属性为绝对定位 */
   top: -650px; /* 设置距离顶部的位置 */
   left: 200px; /* 设置距离左侧的位置 */
+  background: rgba(255, 255, 255, 0.518)
 }
 .custom-textarea1 {
   width: 230px; /* 设置宽度 */
   height: 50px; /* 设置高度 */
   /* 可以根据需要调整宽度和高度 */
   position: absolute; /* 设置位置属性为绝对定位 */
-  top: 85px; /* 设置距离顶部的位置 */
+  top: 120px; /* 设置距离顶部的位置 */
   left: 20px; /* 设置距离左侧的位置 */
 }
 .bottom-4 {
